@@ -13,6 +13,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+    background-position: fixed;
 }
 
 ul{
@@ -22,12 +23,16 @@ ul{
 
 li{
     list-style: none;
-    text-decoration: none;
+    text-decoration: none, !important;
 }
-a{
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
     text-decoration: none;
+    margin : 0;
     padding: 0;
-    margin: 0;
 }
 
 header{
@@ -43,13 +48,12 @@ header{
 }
 
 
-
 #portfolio{
     font-size: 50px;
-    color:white;
+    color: rgba(55, 150, 55,0.9);
 }
 #portfolio:hover{
-    color:  rgb(255, 37, 37);
+    color:  white;
     font-variant: normal;
 }
 #header{
@@ -74,18 +78,20 @@ header{
 }
 
 #nav-point :hover{
-    color: rgb(255, 37, 37);
+    /*color: rgba(10, 255, 20,0.3);*/
+    color:  rgba(55, 150, 55,0.9);
     font-variant: normal;
 }
 .point-nav{
     padding: 10px;
     color:blue;
     background-color: rgba(255, 255, 255,0.9);
+    border-style: inset;
+    border: 20px;
     border-radius: 40px;
     margin: 50px;
     width: 100px;
 }
-
 
 main{
     margin-top: 150px;
@@ -96,10 +102,18 @@ main{
     font-size: 40px;
     text-align: center;
 }
+#salutation_acccueil #titre{
+    border: 5px dotted rgba(55, 150, 55,0.911);
+    border-radius: 30px;
+    padding: 10px;
+    color: rgba(255, 255, 255,0.6);
+
+}
 #salutation_acccueil #titre:hover{
     color: rgb(255, 37, 37);
     text-align: center;
 }
+
 #a_propos{
     font-size: 20px;
     text-align: center;
@@ -145,7 +159,7 @@ main{
 .image_competences{
     background-color: #ddd;
     width: 150px;
-    height: 130px;
+    height: 150px;
     border-radius: 20%;
     padding: 10px;
     margin-left: 20px;
